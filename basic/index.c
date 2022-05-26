@@ -6,13 +6,12 @@
 int main()
 {
 
-    float farenheight, celcious;
-    printf("Enter farenheight : \n");
-    scanf("%f", &farenheight);
+    int a = 10, b = 5, temp;
+    printf("before swapping %d -> %d\n", a, b);
+    temp = a; // a is empty now
+    a = b;    // b is empty now and a has b
+    b = temp; // temp is empty now
 
-    celcious = (5 * (farenheight - 32)) / 9;
-
-    printf("celcious = %.2f ", celcious);
-
+    printf("%d -> %d", a, b);
     return 0;
 }
