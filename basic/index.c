@@ -6,13 +6,13 @@
 int main()
 {
 
-    float r, area;
+    float r, perimeter;
     printf("Enter radius : \n");
     scanf("%f", &r);
 
-    area = PI * r * r;
+    perimeter = PI * 2 * r;
 
-    printf("Area = %.2f ", area);
+    printf("perimeter = %.2f ", perimeter);
 
     return 0;
 }
