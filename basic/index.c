@@ -1,4 +1,4 @@
-// Write a program to print hello world
+// Write a program that convert farenheight to celcious
 
 #include <stdio.h>
 
@@ -6,13 +6,13 @@
 int main()
 {
 
-    float foot, meter;
-    printf("Enter Foot : \n");
-    scanf("%f", &foot);
+    float farenheight, celcious;
+    printf("Enter farenheight : \n");
+    scanf("%f", &farenheight);
 
-    meter = foot / MU;
+    celcious = (5 * (farenheight - 32)) / 9;
 
-    printf("meter = %.2f ", meter);
+    printf("celcious = %.2f ", celcious);
 
     return 0;
 }
