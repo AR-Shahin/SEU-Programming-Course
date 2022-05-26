@@ -2,17 +2,17 @@
 
 #include <stdio.h>
 
-#define PI 3.1416
+#define MU 3.25
 int main()
 {
 
-    float r, perimeter;
-    printf("Enter radius : \n");
-    scanf("%f", &r);
+    float foot, meter;
+    printf("Enter Foot : \n");
+    scanf("%f", &foot);
 
-    perimeter = PI * 2 * r;
+    meter = foot / MU;
 
-    printf("perimeter = %.2f ", perimeter);
+    printf("meter = %.2f ", meter);
 
     return 0;
 }
