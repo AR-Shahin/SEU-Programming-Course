@@ -2,23 +2,15 @@
 
 #include <stdio.h>
 
-// #define PI 3.1416
-
-// Global
-// Single line comment
-
-/*
-Multiline comment Multiline comment
-Multiline comment
-*/
+#define PI 3.1416
 int main()
 {
 
-    float b, h, area;
-    printf("Enter base and height : \n");
-    scanf("%f%f", &b, &h);
+    float r, area;
+    printf("Enter radius : \n");
+    scanf("%f", &r);
 
-    area = 0.5 * h * b;
+    area = PI * r * r;
 
     printf("Area = %.2f ", area);
 
