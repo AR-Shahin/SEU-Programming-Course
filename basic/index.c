@@ -5,18 +5,14 @@ int main()
 
     int n;
     scanf("%d",&n);
-
-    if(n > 0){
-        printf("Positive Number");
-    }
-    else if(n < 0){
-        printf("Negative Number");
-    }
-    else if (n == 0)
-    {
-        printf("Number is Zero");
-
-    }
+    
+    // if(n%2==0){
+    //     printf("eve");
+    // }else{
+    //     printf("odd");
+    // }
+   
+    n % 2 == 0 ? "Even" : "Odd";
     
 
     return 0;

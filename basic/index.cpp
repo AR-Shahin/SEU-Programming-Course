@@ -5,16 +5,12 @@ using namespace std;
 
 int main()
 {
-    double salary,mw,hw,ex,total; 
-    cout<<"Enter Salary : ";
-    cin>>salary;
+    int n;
+    cin>>n;
+    string str;
 
-    hw = salary * 0.3;
-    mw = salary * 0.05;
-    ex = 1000;
+    str = n % 2 == 0 ? "Even" : "Odd";
 
-    total = salary + hw + mw + ex;
-
-    cout<<"Gross Salary " <<total;
+    cout<<str;
     return 0;
 }
