@@ -1,19 +1,23 @@
-
-
 #include <stdio.h>
 
 int main()
 {
 
-    double salary,mw,hw,ex,total;
-    printf("Enter Basic Salary : ");
-    scanf("%lf",&salary);
+    int n;
+    scanf("%d",&n);
 
-    hw = salary * 0.3;
-    mw = salary * 0.05;
-    ex = 1000;
+    if(n > 0){
+        printf("Positive Number");
+    }
+    else if(n < 0){
+        printf("Negative Number");
+    }
+    else if (n == 0)
+    {
+        printf("Number is Zero");
 
-    total = salary + hw + mw + ex;
-    printf("Gross Salary : %lf",total);
+    }
+    
+
     return 0;
 }
