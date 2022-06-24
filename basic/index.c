@@ -3,16 +3,15 @@
 int main()
 {
 
-    int n;
-    scanf("%d",&n);
-    
-    // if(n%2==0){
-    //     printf("eve");
-    // }else{
-    //     printf("odd");
-    // }
-   
-    n % 2 == 0 ? "Even" : "Odd";
+    int sell,cost;
+    scanf("%d%d",&sell,&cost);
+
+    if(sell > cost){
+        printf("Profit! %d",sell - cost);
+    }else{
+        printf("Loss! %d",cost - sell);
+
+    }
     
 
     return 0;
