@@ -5,12 +5,26 @@ using namespace std;
 
 int main()
 {
-    int n;
-    cin>>n;
-    string str;
+    int num1,num2;
+    char op;
 
-    str = n % 2 == 0 ? "Even" : "Odd";
+    cin>>num1>>num2>>op;
 
-    cout<<str;
+    switch(op){
+        case '+':
+        cout<<num1 + num2;
+        break;
+        case '-':
+            cout<<num1 - num2;
+            break;
+        case '*':
+            cout<<num1 * num2;
+            break;
+        case '/':
+            cout<<num1 / num2;
+            break;
+        default:
+            printf("Invalid Operator");
+    }
     return 0;
 }
