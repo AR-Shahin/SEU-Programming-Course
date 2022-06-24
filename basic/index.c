@@ -3,37 +3,13 @@
 int main()
 {
 
-    int mark;
-    scanf("%d",&mark);
-    
-    if(mark >= 80 && mark <= 100){
-        printf("A+");
-    }
-    else if(mark >= 75 && mark <= 79){
-        printf("A");
-    }
-    else if(mark >= 70 && mark <= 74){
-        printf("A-");
-    }
-    else if(mark >= 70 && mark <= 74){
-        printf("A-");
-    }
+    char ch;
+    scanf("%c",&ch);
 
-    else if(mark >= 65 && mark <= 69){
-        printf("B+");
-    }
-
-    else if(mark >= 60 && mark <= 64){
-        printf("B");
-    }
-     else if(mark >= 55 && mark <= 59){
-        printf("B-");
-    }
-
-    // I skipped a couple of conditions 
-    
-    else if(mark >= 0 && mark < 40){
-        printf("F");
+    if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+        printf("Vowel");
+    }else{
+        printf("Consonant!");
     }
     return 0;
 }
