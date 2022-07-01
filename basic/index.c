@@ -7,8 +7,7 @@ int main()
     char op;
     scanf("%c",&op);
     scanf("%d%d",&num1,&num2);
-// printf("%d",num1 + num2);
-//     printf("%c",op);
+
     switch(op){
         case '+':
             printf("%d",num1 + num2);

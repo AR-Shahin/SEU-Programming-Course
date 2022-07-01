@@ -1,30 +1,24 @@
-
-
-#include <iostream>
+#include<iostream>
+// #include<conio.h>
 using namespace std;
 
 int main()
 {
-    int num1,num2;
-    char op;
+    int num , r , temp , sum =0;
 
-    cin>>num1>>num2>>op;
+    cout << "Enter some digits =";
+    cin >> num;
 
-    switch(op){
-        case '+':
-        cout<<num1 + num2;
-        break;
-        case '-':
-            cout<<num1 - num2;
-            break;
-        case '*':
-            cout<<num1 * num2;
-            break;
-        case '/':
-            cout<<num1 / num2;
-            break;
-        default:
-            printf("Invalid Operator");
+    temp =num;
+    
+
+    while(temp>0)
+    {
+        r   = temp%10;
+        sum = sum*10+r;
+        temp= temp/10;
     }
-    return 0;
+    cout << "sum of digits =" << sum;
+
+    // getch();
 }
